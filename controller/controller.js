@@ -10,8 +10,8 @@ export const upload = async (req,res)=>{
 
    try {
       const file =await File.create(fileObj);
-      res.status(200).json({ path: `http://localhost:8000/file/${file._id}` })
-      console.log(`http://localhost:8000/file/${file._id}`);
+      res.status(200).json({ path: `https://shareby.onrender.com/file/${file._id}` })
+      console.log(`https://shareby.onrender.com/file/${file._id}`);
    } catch (err) {
       console.log("error is ",err.message)
    }
